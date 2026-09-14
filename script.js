@@ -1,5 +1,5 @@
 //manual recipe input
-document.getElementById("examineRecipe").addEventListener("click", () => {
+document.getElementById("addIngredient").addEventListener("click", () => {
     const container = document.createElement("div");
     container.classList.add("ingredient");
 
@@ -10,3 +10,8 @@ document.getElementById("examineRecipe").addEventListener("click", () => {
     `;
     document.getElementById("ingredients").appendChild(container);
 });
+
+//textarea recipe input
+document.getElementById("examineRecipe").addEventListener("click", () => {
+    const text = document.getElementById("recipeInput").value;
+})
