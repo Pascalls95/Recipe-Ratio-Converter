@@ -33,6 +33,10 @@ document.getElementById("examineRecipe").addEventListener("click", () => {
         row.classList.add("Ingredient");
 
         row.innerHTML = `
-        <input class="name" type="text" value="${name}"`
-    })
-})
+        <input class="name" type="text" value="${name}">
+        <input class="amount" type="number" value="${amount}">
+        <input class="unit" type="text" value="${unit}">
+        `;
+        ingredientsDiv.appendChild(row);
+    });
+});
