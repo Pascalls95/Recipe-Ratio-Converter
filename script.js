@@ -5,7 +5,7 @@ document.getElementById("examineRecipe").addEventListener("click", () => {
 
     container.innerHTML = `
         <input class="name" type="text" placeholder="Ingredient Name">
-
-    `
-    ;
+        <input class="amount" type="number" placeholder="Amount">
+        <input class="unit" type="text" placeholder="Unit (g, mL, cups)">
+    `;
 })
