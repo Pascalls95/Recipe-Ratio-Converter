@@ -17,5 +17,14 @@ document.getElementById("examineRecipe").addEventListener("click", () => {
     const lines = text.split("\n");
 
     const ingredientsDiv = document.getElementById("ingredients")
-    ingredientsDiv.innerHTML = ""; 
+    ingredientsDiv.innerHTML = "";
+    
+    lines.forEach(line => {
+        if (line.trim() === "") return;
+
+        //the basic pattern for inserting ingredients is "300g flour" or "300 g flour"
+        if (!match) return;
+
+        const amount = match[1]
+    })
 })
