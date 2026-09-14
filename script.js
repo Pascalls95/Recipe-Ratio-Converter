@@ -25,6 +25,14 @@ document.getElementById("examineRecipe").addEventListener("click", () => {
         //the basic pattern for inserting ingredients is "300g flour" or "300 g flour"
         if (!match) return;
 
-        const amount = match[1]
+        const amount = match[1];
+        const unit = match[2] || "";
+        const name = match[3];
+
+        const row = document.createElement("div");
+        row.classList.add("Ingredient");
+
+        row.innerHTML = `
+        <input class="name" type="text" value="${name}"`
     })
 })
