@@ -8,4 +8,5 @@ document.getElementById("examineRecipe").addEventListener("click", () => {
         <input class="amount" type="number" placeholder="Amount">
         <input class="unit" type="text" placeholder="Unit (g, mL, cups)">
     `;
+    document.getElementById("ingredients").appendChild(container);
 })
