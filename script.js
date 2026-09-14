@@ -14,4 +14,8 @@ document.getElementById("addIngredient").addEventListener("click", () => {
 //textarea recipe input
 document.getElementById("examineRecipe").addEventListener("click", () => {
     const text = document.getElementById("recipeInput").value;
+    const lines = text.split("\n");
+
+    const ingredientsDiv = document.getElementById("ingredients")
+    ingredientsDiv.innerHTML = ""; 
 })
