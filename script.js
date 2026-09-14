@@ -9,4 +9,4 @@ document.getElementById("examineRecipe").addEventListener("click", () => {
         <input class="unit" type="text" placeholder="Unit (g, mL, cups)">
     `;
     document.getElementById("ingredients").appendChild(container);
-})
+});
