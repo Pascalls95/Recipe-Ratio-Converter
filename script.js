@@ -40,3 +40,8 @@ document.getElementById("examineRecipe").addEventListener("click", () => {
         ingredientsDiv.appendChild(row);
     });
 });
+//convert recipe amounts
+document.getElementById("convert").addEventListener("click", () => {
+    const original = Number(document.getElementById("original").value);
+    const desired = Number(document.getElementById("desired").value);
+})
