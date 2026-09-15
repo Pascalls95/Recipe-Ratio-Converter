@@ -32,7 +32,7 @@ document.getElementById("examineRecipe").addEventListener("click", () => {
         const name = match[3];
 
         const row = document.createElement("div");
-        row.classList.add("Ingredient");
+        row.classList.add("ingredient");
 
         row.innerHTML = `
         <input class="name" type="text" value="${name}">
@@ -65,5 +65,5 @@ document.getElementById("convert").addEventListener("click", () => {
         return `<p>${i.name}: ${newAmount.toFixed(2)} ${i.unit}</p>`;
     }).join("");
         
-    document.getElementById("results").innerHTML = results;
+    document.getElementById("convertedIngredients").innerHTML = results;
 });
