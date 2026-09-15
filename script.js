@@ -58,5 +58,9 @@ document.getElementById("convert").addEventListener("click", () => {
         unit: el.querySelector(".unit").value
     }));
 
-    
+    const results = ingredients.map(i => {
+        const newAmount = i.amount * factor;
+        return `<p>${i.name}: ${newAmount.toFixed(2)} ${i.unit}</p>`;
+    }).join("");
+        
 })
