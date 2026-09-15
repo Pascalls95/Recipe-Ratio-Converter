@@ -63,4 +63,5 @@ document.getElementById("convert").addEventListener("click", () => {
         return `<p>${i.name}: ${newAmount.toFixed(2)} ${i.unit}</p>`;
     }).join("");
         
-})
+    document.getElementById("results").innerHTML = results;
+});
