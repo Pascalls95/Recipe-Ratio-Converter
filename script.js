@@ -47,5 +47,16 @@ document.getElementById("convert").addEventListener("click", () => {
 
     if (!original || !desired) {
         alert("Please enter both serving numbers.");
+        return;
     }
+
+    const factor = desired / original;
+
+    const ingredients = [...document.querySelectorAll(".ingredient")].map(el => ({
+        name: el.querySelector(".name").value,
+        amount: Number(el.querySelector(".amount").value),
+        unit: el.querySelector(".unit").value
+    }));
+
+    
 })
