@@ -23,6 +23,8 @@ document.getElementById("examineRecipe").addEventListener("click", () => {
         if (line.trim() === "") return;
 
         //the basic pattern for inserting ingredients is "300g flour" or "300 g flour"
+        const match = line.match(/(\d+\.?\d*)\s*([a-zA-Z]+)?\s*(.*)/);
+        
         if (!match) return;
 
         const amount = match[1];
