@@ -1,10 +1,11 @@
 body {
     text-align: center;
-    background-color: #eee9e9;
+    background-color: #f4f3f3;
 }
 
 h1 {
-    font-family: Google Sans Code;
+    font-family: Newsreader;
+    padding-bottom: 30px;
 }
 
 h2 {
@@ -20,9 +21,24 @@ input {
 }
 
 textarea {
-
+    border-radius: 16px;
+    padding: 10px;
 }
 
 button {
 
+}
+
+#content {
+    border: 2px solid rgb(27, 187, 27);
+    padding: 25px;
+    border-radius: 16px;
+    margin: auto 300px auto 300px;
+}
+
+.recipeInsert {
+    border: 2px solid gray;
+    padding: 30px;
+    border-radius: 16px;
+    margin: 30px 200px 30px 200px;
 }

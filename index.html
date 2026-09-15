@@ -1,42 +1,49 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Recipe Ratio Converter</title>
+        <title>Recipe Ratio Calculator</title>
         <!--stylesheets-->
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Newsreader">
     </head>
     <body>
-        <h1>Recipe Ratio Converter</h1>
-        
-        <!--stuff for serving inputs (original and desired)-->
-        <label>Original Serves:</label>
-        <input id="original" type="number">
-        <label>Desired Serves:</label>
-        <input id="desired" type="number">
+        <h1><span class="fa fa-calculator"></span> Recipe Ratio Calculator</h1>
+        <div id="content">
+            <!--stuff for serving inputs (original and desired)-->
+            <label>Original Serves:</label>
+            <input id="original" type="number">
+            <label>Desired Serves:</label>
+            <input id="desired" type="number">
+            <div class="recipeInsert">
+                <!--textarea input for recipe (users copy paste recipe list straight here)-->
+                <h2>Paste Your Recipe Here</h2>
+                <textarea id="recipeInput" rows="8" cols="40" placeholder="e.g.
+                300g flour
+                150g sugar
+                3 eggs
+                50mL milk"></textarea>
 
-        <!--textarea input for recipe (users copy paste recipe list straight here)-->
-        <h2>Paste Your Recipe Here</h2>
-        <textarea id="recipeInput" rows="8" cols="40" placeholder="e.g.
-        300g flour
-        150g sugar
-        3 eggs
-        50mL milk"></textarea>
+                <br>
 
-        <br>
+                <button id="examineRecipe">Load Ingredients</button>
+            </div>
+            <br>
+            <h2>OR</h2>
+            <div class="recipeInsert">
+                <!--manual input (users insert each ingredient separately)-->
+                <h2>Insert Your Recipe Manually</h2>
+                <div id="ingredients"></div>
+                <br>
+                <button id="addIngredient">Add Ingredient</button>
+            </div>
 
-        <button id="examineRecipe">Load Ingredients</button>
-
-        <!--manual input (users insert each ingredient separately)-->
-        <h2>Insert Your Recipe Manually</h2>
-        <div id="ingredients"></div>
-        <button id="addIngredient">Add Ingredient</button>
-
-        <!--convert the ratios-->
-        <button id="convert">Convert</button>
-        <h2>Converted Ingredients</h2>
-        <div id="convertedIngredients"></div>
+            <!--convert the ratios-->
+            <button id="convert">Convert</button>
+            <h2>Converted Ingredients</h2>
+            <div id="convertedIngredients"></div>
+        </div>
 
         <!--link to javascript-->
         <script src="script.js"></script>
