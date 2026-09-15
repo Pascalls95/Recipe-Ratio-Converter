@@ -44,4 +44,8 @@ document.getElementById("examineRecipe").addEventListener("click", () => {
 document.getElementById("convert").addEventListener("click", () => {
     const original = Number(document.getElementById("original").value);
     const desired = Number(document.getElementById("desired").value);
+
+    if (!original || !desired) {
+        alert("Please enter both serving numbers.");
+    }
 })
