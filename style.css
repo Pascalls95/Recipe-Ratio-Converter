@@ -18,18 +18,20 @@ label {
 
 input {
     font-family: Inter;
-    border-radius: 4px;
+    border-radius: 8px;
     border: 2px solid gray;
     margin-bottom: 5px;
+    padding: 5px;
 }
 
 textarea {
     border-radius: 16px;
     padding: 20px;
-    width: 80%;
+    width: 60%;
     margin-bottom: 20px;
     resize: none;
     text-align: left;
+    font-family: Inter;
 }
 
 button {
@@ -39,6 +41,7 @@ button {
     cursor: pointer;
     background-color: rgb(81, 219, 81);
     border: 2px solid green;
+    font-family: Inter;
 }
 
 button:hover {
