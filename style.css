@@ -36,14 +36,13 @@ button {
     padding: 15px;
     transition: 0.3s;
     cursor: pointer;
-    background-color: rgb(120, 249, 120);
+    background-color: rgb(81, 219, 81);
     border: 2px solid green;
 }
 
 button:hover {
     transform: scale(1.04);
-    background-color: rgb(46, 215, 46);
-    box-shadow: 0 0 15px 2px rgb(75, 192, 75);
+    background-color: rgb(42, 174, 42);
 }
 
 #content {
