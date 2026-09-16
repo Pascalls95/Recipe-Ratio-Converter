@@ -29,6 +29,7 @@ textarea {
     width: 80%;
     margin-bottom: 20px;
     resize: none;
+    text-align: left;
 }
 
 button {
@@ -61,4 +62,8 @@ button:hover {
 
 div {
     font-family: Inter;
+}
+
+textarea::placeholder {
+    text-align: left;
 }
