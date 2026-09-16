@@ -24,11 +24,23 @@ input {
 
 textarea {
     border-radius: 16px;
-    padding: 10px;
+    padding: 20px;
+    width: 80%;
+    margin-bottom: 20px;
+    resize: none;
 }
 
 button {
+    border-radius: 16px;
+    padding: 15px;
+    transition: 0.3s;
+    cursor: pointer;
+    background-color: rgb(120, 249, 120);
+    border: 2px solid green;
+}
 
+button:hover {
+    transform: scale(1.04);
 }
 
 #content {
@@ -43,4 +55,8 @@ button {
     padding: 30px;
     border-radius: 16px;
     margin: 30px 80px 30px 80px;
+}
+
+div {
+    font-family: Inter;
 }
