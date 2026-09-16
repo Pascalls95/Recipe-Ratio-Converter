@@ -20,6 +20,7 @@ input {
     font-family: Inter;
     border-radius: 4px;
     border: 2px solid gray;
+    margin-bottom: 5px;
 }
 
 textarea {
