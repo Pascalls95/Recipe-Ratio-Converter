@@ -8,3 +8,5 @@ To run this project, simply open the deployed link that has been provided, enter
 AI was partially used in this project, only to learn how do do certain things within the JavaScript, such as using a formula to convert the ratios based on the serves and desired serves.
 
 Provided below are a few screenshots from the website:
+<img width="1920" height="994" alt="Screenshot 2026-09-16 at 5 04 38 pm" src="https://github.com/user-attachments/assets/379e1dec-407f-4b5c-83e5-71f95f07f885" />
+<img width="1920" height="994" alt="Screenshot 2026-09-16 at 5 06 09 pm" src="https://github.com/user-attachments/assets/57b1819e-42ed-42aa-8283-c4c72e6b804a" />
